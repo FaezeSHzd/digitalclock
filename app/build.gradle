@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "uni8.tamrin_3"
+        applicationId "faeze_shzd.tamrin_4"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1

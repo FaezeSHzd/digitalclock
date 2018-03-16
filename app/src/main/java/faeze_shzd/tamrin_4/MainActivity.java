@@ -1,4 +1,4 @@
-package uni8.tamrin_3;
+package faeze_shzd.tamrin_4;
 
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
@@ -11,12 +11,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Typeface d_n =Typeface.createFromAsset(getAssets(),"fonts/segment7.ttf");
         TextView tv_1 = (TextView)findViewById(R.id.TV_1);
         tv_1.setTypeface(d_n);
 
-       TextView tv_3 = (TextView)findViewById(R.id.TV_3);
+        TextView tv_3 = (TextView)findViewById(R.id.TV_3);
         tv_3.setTypeface(d_n);
         TextView tv_5 = (TextView)findViewById(R.id.TV_5);
         tv_5.setTypeface(d_n);
@@ -31,5 +30,5 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tv_10 = (TextView)findViewById(R.id.TV_10);
         tv_10.setTypeface(d_n);
-
-    }}
+    }
+}

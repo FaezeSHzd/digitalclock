@@ -7,16 +7,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="uni8.tamrin_3.MainActivity"
+    tools:context="faeze_shzd.tamrin_4.MainActivity"
     android:background="#060606"
     >
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/linear0"
-        android:orientation="horizontal"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="60dp">
+
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -24,8 +19,9 @@
             android:id="@+id/TV_1"
             android:text="07"
             android:textSize="40sp"
-            android:layout_marginTop="27dp"
-            android:textColor="#34f1f4"/>
+            android:layout_marginTop="40dp"
+            android:textColor="#34f1f4"
+            android:layout_marginLeft="60dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -33,8 +29,10 @@
             android:id="@+id/TV_2"
             android:text=" : "
             android:textSize="40sp"
-            android:layout_marginTop="27dp"
-            android:textColor="#34f1f4"/>
+            android:layout_marginTop="30dp"
+            android:textColor="#34f1f4"
+            android:layout_toRightOf="@id/TV_1"
+            />
 
 
         <TextView
@@ -43,8 +41,11 @@
             android:id="@+id/TV_3"
             android:text="09"
             android:textSize="40sp"
-            android:layout_marginTop="27dp"
-            android:textColor="#34f1f4"/>
+            android:layout_marginTop="40dp"
+            android:textColor="#34f1f4"
+            android:layout_marginLeft="05dp"
+            android:layout_toRightOf="@id/TV_2"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,8 +53,9 @@
             android:id="@+id/TV_4"
             android:text=" : "
             android:textSize="40sp"
-            android:layout_marginTop="27dp"
-            android:textColor="#34f1f4"/>
+            android:layout_marginTop="30dp"
+            android:textColor="#34f1f4"
+            android:layout_toRightOf="@id/TV_3"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -61,45 +63,36 @@
             android:id="@+id/TV_5"
             android:text="20"
             android:textSize="40sp"
-            android:layout_marginTop="27dp"
-            android:textColor="#34f1f4"/>
+            android:layout_marginTop="40dp"
+            android:textColor="#34f1f4"
+            android:layout_toRightOf="@id/TV_4"/>
 
 
-    </LinearLayout>
 
 
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/img1"
-            android:src="@drawable/clk2"
-            android:layout_marginTop="27dp"
-            android:layout_marginLeft="100dp"
-            android:layout_below="@id/linear0"
-            />
-
-    <LinearLayout
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/linear1"
-        android:orientation="horizontal"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/img1"
-        >
+        android:id="@+id/img1"
+        android:src="@drawable/clk2"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/TV_3"
+        />
 
 
 
 
-    <TextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/TV_6"
             android:text="1396"
             android:textSize="40sp"
             android:layout_marginTop="27dp"
-            android:textColor="#34f1f4"/>
+            android:textColor="#34f1f4"
+            android:layout_below="@id/img1"
+            android:layout_marginLeft="40dp"/>
 
 
         <TextView
@@ -109,7 +102,9 @@
             android:text=" / "
             android:textSize="40sp"
             android:layout_marginTop="27dp"
-            android:textColor="#34f1f4"/>
+            android:textColor="#34f1f4"
+            android:layout_toRightOf="@id/TV_6"
+            android:layout_below="@id/img1"/>
 
 
         <TextView
@@ -119,7 +114,9 @@
             android:text="12"
             android:textSize="40sp"
             android:layout_marginTop="27dp"
-            android:textColor="#34f1f4"/>
+            android:textColor="#34f1f4"
+            android:layout_toRightOf="@id/TV_7"
+            android:layout_below="@id/img1"/>
 
 
         <TextView
@@ -129,7 +126,9 @@
             android:text=" / "
             android:textSize="40sp"
             android:layout_marginTop="27dp"
-            android:textColor="#34f1f4"/>
+            android:textColor="#34f1f4"
+            android:layout_toRightOf="@id/TV_8"
+            android:layout_below="@id/img1"/>
 
 
         <TextView
@@ -139,20 +138,12 @@
             android:text="18"
             android:textSize="40sp"
             android:layout_marginTop="27dp"
-            android:textColor="#34f1f4"/>
+            android:textColor="#34f1f4"
+            android:layout_toRightOf="@id/TV_9"
+            android:layout_below="@id/img1"/>
 
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/linear2"
-        android:layout_below="@id/linear1"
-        android:layout_marginTop="27dp"
-        android:layout_marginLeft="0dp"
 
-        >
 
 
         <TextView
@@ -161,12 +152,14 @@
             android:id="@+id/TV5"
             android:text="اذان مغرب 18:01"
             android:textColor="#141415"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="60dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:background="#7df240"
             android:textSize="10sp"
-            android:layout_marginLeft="42dp"
+            android:layout_marginLeft="60dp"
+            android:layout_below="@id/TV_6"
+
             />
 
 
@@ -176,12 +169,15 @@
             android:id="@+id/TV4"
             android:text="اذان ظهر 11:51"
             android:textColor="#141415"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="60dp"
             android:layout_marginLeft="20dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:background="#7df240"
             android:textSize="10sp"
+            android:layout_toRightOf="@id/TV5"
+            android:layout_below="@id/TV_6"
+
             />
 
         <TextView
@@ -190,17 +186,19 @@
             android:id="@+id/TV3"
             android:text="اذان صبح 04:36"
             android:textColor="#141415"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="60dp"
             android:layout_marginLeft="20dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:background="#7df240"
             android:textSize="10sp"
+            android:layout_toRightOf="@id/TV4"
+            android:layout_below="@id/TV_6"
+
 
             />
 
 
-    </LinearLayout>
 
 
 </RelativeLayout>
