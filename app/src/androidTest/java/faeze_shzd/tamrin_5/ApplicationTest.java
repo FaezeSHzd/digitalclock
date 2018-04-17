@@ -1,4 +1,4 @@
-package faeze_shzd.tamrin_4;
+package faeze_shzd.tamrin_5;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
