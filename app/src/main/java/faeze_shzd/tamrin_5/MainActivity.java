@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Typeface d_n = Typeface.createFromAsset(getAssets(),"fonts/segment7.ttf");
 
         ImageButton IB1 = (ImageButton)findViewById(R.id.imgbtn1);
+        ImageButton IB2 = (ImageButton)findViewById(R.id.imgbtn2);
         final EditText ET1=(EditText) findViewById(R.id.Etxt_1);
     //    final EditText ET2=(EditText) findViewById(R.id.Etxt_2);
         final EditText ET3=(EditText) findViewById(R.id.Etxt_3);
@@ -305,6 +306,230 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+
+
+
+        IB2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Date date=new Date();
+                int H = date.getHours();
+                int M=date.getMinutes();
+                int S=date.getSeconds();
+                ET1.setText( (H-12) +" ");
+                //  ET2.setText(" : ");
+                ET3.setText( (M)+ " " );
+                //ET4.setText( " : ");
+                ET5.setText ((S)+ " ");
+
+
+
+
+
+                soundsa.start();
+                switch (H) {
+                    case 1:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h1.start();
+                            }
+                        });
+                        break;
+                    case 2:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h2.start();
+                            }
+                        });
+                        break;
+                    case 3:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h3.start();
+                            }
+                        });
+                        break;
+                    case 4:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h4.start();
+                            }
+                        });
+                        break;
+                    case 5:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h5.start();
+                            }
+                        });
+                        break;
+                    case 6:
+
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h6.start();
+                            }
+                        });
+                        break;
+                    case 7:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h7.start();
+                            }
+                        });
+                        break;
+                    case 8:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h8.start();
+                            }
+                        });
+                        break;
+                    case 9:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h9.start();
+                            }
+                        });
+                        break;
+                    case 10:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h10.start();
+                            }
+                        });
+                        break;
+                    case 11:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h11.start();
+                            }
+                        });
+                        break;
+                    case 12:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h12.start();
+                            }
+                        });
+                        break;
+                    case 13:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h1.start();
+                            }
+                        });
+                        break;
+                    case 14:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h2.start();
+                            }
+                        });
+                        break;
+                    case 15:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h3.start();
+                            }
+                        });
+                        break;
+                    case 16:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h4.start();
+                            }
+                        });
+                        break;
+                    case 17:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h5.start();
+                            }
+                        });
+                        break;
+                    case 18:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h6.start();
+                            }
+                        });
+                        break;
+                    case 19:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h7.start();
+                            }
+                        });
+                        break;
+                    case 20:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h8.start();
+                            }
+                        });
+                        break;
+                    case 21:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h9.start();
+                            }
+                        });
+                        break;
+                    case 22:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h10.start();
+                            }
+                        });
+                        break;
+                    case 23:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h11.start();
+                            }
+                        });
+                        break;
+                    case 0:
+                        soundsa.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                h12.start();
+                            }
+                        });
+                        break;
+
+                }
+
+            }
+        });
+
 
         EditText editText1 = (EditText) findViewById(R.id.Etxt_1);
         editText1.setTypeface(d_n);
